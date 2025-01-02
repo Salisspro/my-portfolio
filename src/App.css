@@ -1,0 +1,48 @@
+#root {
+background-color: #161625;
+padding: 30px;
+display: 1;
+align-items: center;
+justify-content: center;
+}
+
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* @keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+span{
+  color: rgb(175, 175, 6);
+}
+
+.closes{
+  position: absolute;
+  right: 70px;
+  font-size: 20px;
+  top: 50px;
+}
+
+
+input{
+  position: relative;
+  width: 300px;
+  background-color: transparent;
+  padding: 5px;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: 1px solid rgb(242, 242, 25);
+  
+}
