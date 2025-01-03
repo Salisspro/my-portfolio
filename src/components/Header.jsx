@@ -1,6 +1,6 @@
 import { useState } from "react"
 // import Try from "./Try"
-import Logo from './icons/vecteezy_comic-halftone-alphabet-letter-and-number_43233456.png'
+import Logo from './icons/vecteezy_cartoon-happy-alphabet-letter-and-number_44029103.png'
 export default function Header() {
    const [modal, setModal] = useState(true)
 
@@ -14,9 +14,9 @@ export default function Header() {
          <div className="flex items-center">
 
             <img
-               className="w-[40px]"
+               className="w-[40px] logo-spin"
                src={Logo} alt="" />
-            <a href="#" className="text-yellow-500 text-5xl font-mono ">alisspro</a>
+            <a href="#" className="text-yellow-500 text-5xl font-mono  mt-10">alisspro</a>
          </div>
 
 
@@ -30,7 +30,7 @@ export default function Header() {
 
             <div>
                {modal ? <div>
-                  <span className="font-mono cursor-pointer animate-pulse">Log in</span>
+                  <span className="font-mono cursor-pointer animate-pulse">Read more</span>
                   <span className="caret"></span>
                </div>
                   :

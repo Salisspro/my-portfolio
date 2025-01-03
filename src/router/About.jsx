@@ -1,8 +1,9 @@
-
 function About() {
    return (
-       <div>
-           <h1>This is the about page</h1>
+       <div className="mb-10 font-mono">
+           <h1 className="text-slate-300">
+            This is the about page. Click the link to go back to the home page.
+           </h1>
        </div>
    )
 }

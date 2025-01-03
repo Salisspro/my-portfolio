@@ -1,11 +1,12 @@
 #root {
 background-color: #161625;
-padding: 30px;
-display: 1;
-align-items: center;
-justify-content: center;
+padding: 20px;
+
 }
 
+.headerText{
+  letter-spacing: 2px;
+}
 
 
 *{
@@ -14,24 +15,15 @@ padding: 0;
 box-sizing: border-box;
 }
 
-/* @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
 span{
   color: rgb(175, 175, 6);
 }
 
 .closes{
   position: absolute;
-  right: 70px;
+  right: 55px;
   font-size: 20px;
-  top: 50px;
+  top: 35px;
 }
 
 
@@ -43,6 +35,7 @@ input{
   border-top: none;
   border-right: none;
   border-bottom: none;
-  border-left: 1px solid rgb(242, 242, 25);
+  border-left: 1px solid rgb(234, 59, 5);
+  color: antiquewhite;
   
 }
