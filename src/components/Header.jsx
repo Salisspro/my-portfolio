@@ -16,22 +16,16 @@ export default function Header() {
             <img
                className="w-[40px] logo-spin"
                src={Logo} alt="" />
-            <a href="#" className="text-yellow-500 text-5xl font-mono  mt-10">alisspro</a>
+            <p className="text-slate-300 text-5xl font-mono  mt-10">alisspro</p>
          </div>
 
 
          <nav className=" flex gap-10 text-3xl ">
-            {/* <a href="" className=" active">Home</a> */}
-            {/* <a href="" className=" active">About</a>
-            <a href="" className=" active">Cotact</a> */}
-
-         </nav>
+            </nav>
          <div className="text-center" onClick={handleClick}>
 
             <div>
                {modal ? <div>
-                  <span className="font-mono cursor-pointer animate-pulse">Read more</span>
-                  <span className="caret"></span>
                </div>
                   :
                   <div

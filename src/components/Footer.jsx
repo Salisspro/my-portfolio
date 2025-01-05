@@ -23,17 +23,6 @@ export default function Footer() {
           className='w-[3rem]'
           src={Call} alt="" title='GitHub' />
       </a>
-
-      {/* <a href="https://x.com/salisspro">
-      <img 
-        className='w-[3rem]'
-        src={Call} alt="" title='GitHub'/>
-      </a> */}
-
     </div>
   )
 }
-
-// import { IoIosLogIn } from "react-icons/io";
-
-// <IoIosLogIn />
