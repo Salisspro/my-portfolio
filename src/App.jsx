@@ -7,7 +7,6 @@ import FireStore from './components/firestore/FireStore'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 // import {  } from "react-router-dom";
 
-import Home from './router/Home'
 import About from './router/About'
 import Sign from './components/Sign'
 import { useState } from 'react'
@@ -31,13 +30,13 @@ function App() {
             className='signModal'
             onClick={handleModal}>
             {modal ? <div>
-              <img className='w-[35px] rounded-lg hover:shadow-[0_0_10px_white] transition-all ease-out mt-10'
+              <img className='w-[35px] rounded-lg hover:shadow-[0_0_10px_white] transition-all ease-out mt-5'
                 src={Logo} alt="" />
               {/* <span className='caret'></span> */}
             </div> : <div className='mb-10 text-3xl flex text-slate-100 gap-10 font-sans'>
+              <Link to='Sign'>Sign in</Link>
               <Link to="/">Home</Link>
               <Link to="/About">About</Link>
-              <Link to='Sign'>Sign in</Link>
             </div>}
           </div>
 
@@ -45,7 +44,7 @@ function App() {
           <Hero />
 
           <Routes>
-            <Route path="Home" element={<Home />} />
+            <Route path="App" element={<App />} />
             <Route path='About' element={<About />} />
             <Route path='Sign' element={<Sign />} />
           </Routes>

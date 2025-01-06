@@ -1,5 +1,4 @@
 import { useState } from "react"
-// import Try from "./Try"
 import Logo from './icons/vecteezy_cartoon-happy-alphabet-letter-and-number_44029103.png'
 export default function Header() {
    const [modal, setModal] = useState(true)
@@ -10,13 +9,14 @@ export default function Header() {
    }
 
    return (
-      <div className="text-slate-50 mb-10  flex items-center justify-between gap-5">
+      <div className="mb-10  flex items-center justify-between gap-5">
          <div className="flex items-center">
 
             <img
-               className="w-[40px] logo-spin"
+               className="w-[30px]"
                src={Logo} alt="" />
-            <p className="text-slate-300 text-5xl font-mono  mt-10">alisspro</p>
+            <h1 className="text-4xl font-mono text-slate-100 mt-5">alisspro</h1>
+
          </div>
 
 
@@ -31,7 +31,6 @@ export default function Header() {
                   <div
                      className="container"
                   >
-                     {/* <Try /> */}
                   </div>}
             </div>
          </div>

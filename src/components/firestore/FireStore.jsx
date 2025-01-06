@@ -1,6 +1,12 @@
 import { useEffect, useRef, useState } from "react"
 import { db } from "../../config/fireBase"
-import { collection, getDocs, addDoc, doc, deleteDoc } from 'firebase/firestore'
+import {
+   collection,
+   getDocs,
+   addDoc,
+   doc,
+   deleteDoc,
+} from 'firebase/firestore'
 
 
 export default function FireStore() {
@@ -35,9 +41,12 @@ export default function FireStore() {
       await deleteDoc(newDoc)
    }
 
-   const handleAddDoc = async () => {
 
+
+
+   const handleAddDoc = async () => {
       try {
+         newRef.current.value = ''
          await addDoc(postCollection, {
             title: title,
             userPost: description
@@ -50,10 +59,10 @@ export default function FireStore() {
 
 
    return (
-      <div className="text-slate-100 font-mono input-group flex-nowrap">
-         <h1 className="text-5xl">FireStore</h1>
+      <div className="text-slate-100 font-mono input-group flex-nowrap mt-10">
+         <span className="text-4xl">You may leave comment...</span>
 
-         <div className="add -ml-">
+         <div className="add ">
             <input
                className="addText"
                onChange={(e) => setTitle(e.target.value)}
@@ -63,9 +72,9 @@ export default function FireStore() {
                className="addText"
                ref={newRef}
                onChange={(e) => setDescription(e.target.value)}
-               type="text" placeholder="Description" />
+               type="text" placeholder="commet" />
             <button
-               ref={newRef}
+               ref={newRef.current}
                className="hover:border p-2 ro"
                onClick={handleAddDoc}>send</button>
          </div>
@@ -73,16 +82,14 @@ export default function FireStore() {
          <div className="mb-5 grid md:grid-cols-3 gap-2">
             {text.map((post) => (
                <div key={post.id} className="hover:bg-slate-700 mt-[30px] p-10 ease-in-out transition-all shadow-[0_0_10px_white] rounded-lg">
-                  <h2> <i className="text-3xl">Name:</i> {post.title}</h2>
-                  <p><i>{`This is what ${post.title} says:`}</i> {post.userPost}</p>
-                  <div className="flex mt-5">
+                  <h2> <span className="text-3xl">Name:</span> {post.title}</h2>
+                  <div><p>{`This is what ${post.title} says: ` }</p> {post.userPost} </div>
+                  <div className="flex mt-5 items-center">
 
                      <button
                         onClick={() => handlDelete(post.id)}
-                        className="rounded-lg hover:border p-1">Delete</button>
-                     <button className="hover:border p-1 rounded-lg">
-                        Update</button>
-                     <input type="text" placeholder="update what you said " className="update" />
+                        className="rounded-lg hover:border p-1 hover:shadow-[0_0_10px_white] hover:animate-pulse ">Delete</button>
+
                   </div>
                </div>
             ))}

@@ -20,11 +20,16 @@ export default function Sign() {
 
    const hadleUserAuth = async () => {
       try {
-         
+
          await createUserWithEmailAndPassword(auth, email, password)
          console.log('User created!')
       } catch (error) {
          console.log(error)
+      }
+      if (email === '' || password === '') {
+         alert('Please enter a valid email')
+      } else {
+         alert(`${email} User created successfully`)
       }
    }
 
@@ -36,6 +41,7 @@ export default function Sign() {
       } catch (error) {
          console.log(error)
       }
+      alert('You have signed out')
    }
 
    const handleGoogleSignIn = async () => {

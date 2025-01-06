@@ -8,12 +8,12 @@ export default function Footer() {
   return (
     <div className="flex gap-5 mt-[30px]
     text-slate-50 items-center justify-end mr-10">
-      <a href="#">
+      <a href="http://www.facebook.com/salisspro">
         <img
           className='w-[4rem]'
           src={Facebook} alt="" title='Facebook' />
       </a>
-      <a href="#">
+      <a href="https://api.whatsapp.com/send?phone=+2349125303046">
         <img
           className='w-[4rem]'
           src={Whatsapp} alt="" title='WhatsApp' />
