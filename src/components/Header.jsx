@@ -21,7 +21,7 @@ export default function Header() {
 
 
          <nav className=" flex gap-10 text-3xl ">
-            </nav>
+         </nav>
          <div className="text-center" onClick={handleClick}>
 
             <div>
@@ -29,11 +29,12 @@ export default function Header() {
                </div>
                   :
                   <div
-                     className="container"
+                  className="container"
                   >
                   </div>}
             </div>
          </div>
+                  
       </div>
    )
 }

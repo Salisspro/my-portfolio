@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react"
-import { db } from "../../config/fireBase"
+import { db, auth } from "../../config/fireBase"
 import {
    collection,
    getDocs,
@@ -49,7 +49,8 @@ export default function FireStore() {
          newRef.current.value = ''
          await addDoc(postCollection, {
             title: title,
-            userPost: description
+            userPost: description,
+            userid: auth?.currentUser?.uid,
          })
       } catch (err) {
          console.error('err ', err);
@@ -81,7 +82,8 @@ export default function FireStore() {
 
          <div className="mb-5 grid md:grid-cols-3 gap-2">
             {text.map((post) => (
-               <div key={post.id} className="hover:bg-slate-700 mt-[30px] p-10 ease-in-out transition-all shadow-[0_0_10px_white] rounded-lg">
+               <div key={post.id} className="hover:bg-slate-700
+                mt-[30px] p-10 ease-in-out transition-all shadow-[0_0_10px_white] rounded-lg">
                   <h2> <span className="text-3xl">Name:</span> {post.title}</h2>
                   <div><p>{`This is what ${post.title} says: ` }</p> {post.userPost} </div>
                   <div className="flex mt-5 items-center">

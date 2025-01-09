@@ -7,7 +7,7 @@ import Call from './icons/vecteezy_free-logo-github_53066802.png'
 export default function Footer() {
   return (
     <div className="flex gap-5 mt-[30px]
-    text-slate-50 items-center justify-end mr-10">
+    text-slate-50 items-center justify-end mr-10 footer">
       <a href="http://www.facebook.com/salisspro">
         <img
           className='w-[4rem]'
