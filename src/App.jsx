@@ -4,6 +4,7 @@ import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import MyOffer from './components/MyOffer'
 import Skills from './components/Skills'
 
 
@@ -13,6 +14,7 @@ export default function App() {
       <Header/>
       <Hero/>
       <Skills/>
+      <MyOffer/>
       <Footer/>
     </div>
   )

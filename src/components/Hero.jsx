@@ -9,13 +9,13 @@ export default function Hero() {
                Hello, I am a <span className='text-blue-500'>React Developer</span>
             </p>
 
-            <div className='w-[15em] rounded-full overflow-hidden border-4 border-blue-500 mb-10'>
-               <img className='' src={IMG} alt="" />
+            <div className='w-[15em] rounded overflow-hidden border-2  border-blue-500 mb-10 '>
+               <img className='z-10  opacity-70' src={IMG} alt="" />
             </div>
 
          </div>
 
-         <p className='text-slate-300 text-lg font-mono md:text-3xl'>
+         <p className='text-slate-300 text-lg font-semibold md:text-3xl'>
                   I am a React developer with a passion for building web applications. I have experience in building responsive and user-friendly web applications using React, Tailwind CSS, and other modern web technologies.
                   I am always eager to learn new technologies and improve my skills. I am currently looking for opportunities to work on exciting projects and collaborate with other developers.
                </p>
