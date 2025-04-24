@@ -1,60 +1,19 @@
+
+
 import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
-import FireStore from './components/firestore/FireStore'
-
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-// import {  } from "react-router-dom";
-
-import About from './router/About'
-import Sign from './components/Sign'
-import { useState } from 'react'
-import Logo from '../src/components/icons/images (3).jpg'
-// import Contact from './router/Contact'
+import Skills from './components/Skills'
 
 
-
-function App() {
-  const [modal, setModal] = useState(true)
-
-  const handleModal = () => {
-    setModal(!modal)
-  }
-
+export default function App() {
   return (
-    <>
-      <div className='grid bg-zinc-800 h-[100%] p-[32px] shadow-[0_0_10px_white] rounded-lg '>
-        <BrowserRouter>
-          <div
-            className='signModal'
-            onClick={handleModal}>
-            {modal ? <div>
-              <img className='w-[35px] rounded-lg hover:shadow-[0_0_10px_white] transition-all ease-out mt-5'
-                src={Logo} alt="" />
-              {/* <span className='caret'></span> */}
-            </div> : <div className='mb-10 text-3xl flex text-slate-100 gap-10 font-sans'>
-              <Link to='Sign'>Sign in</Link>
-              <Link to="/">Home</Link>
-              <Link to="/About">About</Link>
-            </div>}
-          </div>
-
-          <Header />
-          <Hero />
-
-          <Routes>
-            <Route path="App" element={<App />} />
-            <Route path='About' element={<About />} />
-            <Route path='Sign' element={<Sign />} />
-          </Routes>
-
-          <FireStore />
-          <Footer />
-        </BrowserRouter>
-      </div>
-    </>
+    <div className='min-h-screen text-slate-50 bg-slate-950'>
+      <Header/>
+      <Hero/>
+      <Skills/>
+      <Footer/>
+    </div>
   )
 }
-
-export default App

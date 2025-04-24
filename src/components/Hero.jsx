@@ -1,40 +1,24 @@
-import { useState } from 'react'
-import IMG from '../assets/images/developer-8764524.jpg'
+import IMG from '../img/317752578_1361099784715126_2064839100156994520_n-removebg-preview (1).png'
+
 export default function Hero() {
-   const [readMore, setReadMore] = useState(false)
-
-
-   const handleReadMore = () => {
-      setReadMore(!readMore)
-
-   }
    return (
-      <div className='group grid md:flex items-center justify-center m-2 gap-10 font-mono mb-[5rem]'>
+      <div className='mt-20 p-10'>
+         <div className='flex items-center justify-center space-x-10'>
 
-         <div>
-            <img
-               className='w-full rounded-lg h-[350px]'
-               src={IMG} alt="" />
-         </div>
-
-         <div>
-
-            <h1 className=' text-slate-300'>Hi there</h1>
-            <h1 className='font-mono text-slate-300 text-5xl mb-3 mt-3 font-bold'>Software Developer</h1>
-
-            <p className="text-slate-50">Hi, i am Salisu Yushau, a skilled React native developer with a passion for building scalable and efficient mobile application {readMore && 'Thank you. we have done everything'}_
-               <span onClick={handleReadMore} className='cursor-pointer  animate-pulse'>read more</span>
-
-               <span className='caret'></span>
+            <p className='text-4xl font-bold text-slate-50'>
+               Hello, I am a <span className='text-blue-500'>React Developer</span>
             </p>
 
-            <div className='flex gap-10 mt-5'>
-
-               <button className="border p-4 mt-5 text-slate-200 font-semibold rounded-md  font-mono hover:shadow-[0_0_5px_white] transition-all ease-in-out">Contact us</button>
-
-               <button className="font-semibold border text-slate-100 p-4 mt-5  rounded-md  font-mono hover:shadow-[0_0_5px_white] transition-all ease-in-out ">Hire Salisspro</button>
+            <div className='w-[15em] rounded-full overflow-hidden border-4 border-blue-500 mb-10'>
+               <img className='' src={IMG} alt="" />
             </div>
+
          </div>
+
+         <p className='text-slate-300 text-lg font-mono md:text-3xl'>
+                  I am a React developer with a passion for building web applications. I have experience in building responsive and user-friendly web applications using React, Tailwind CSS, and other modern web technologies.
+                  I am always eager to learn new technologies and improve my skills. I am currently looking for opportunities to work on exciting projects and collaborate with other developers.
+               </p>
 
       </div>
    )
