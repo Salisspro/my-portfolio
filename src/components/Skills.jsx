@@ -14,7 +14,7 @@ export default function Skills() {
     <div className="p-10 transition-all duration-300 bg-slate-900 text-slate-50">
       <h1 className="text-4xl my-5 font-semibold">My skills</h1>
       <div className="font-semibold md:flex grid grid-cols-1 items-center justify-center md:space-x-5 space-y-5">
-         <div className="border-blue-600 border rounded-full md:w-[10em] flex items-center space-x-2">
+         <div className="border-blue-600  border rounded-full  md:w-[10em] flex items-center space-x-2">
             <img className="w-[5em] h-[5em] rounded-full" src={IMG1} alt="" />
             <p className="text-sm p-2">
             Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.

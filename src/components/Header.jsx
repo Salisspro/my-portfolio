@@ -1,19 +1,32 @@
+import { useState } from "react"
+import MENU from '../assets/icons/icon-menu.svg'
+import CLOSE from '../assets/icons/icon-menu-close.svg'
 
 
 export default function Header() {
-  return (
-    <div>
-      <div className='flex justify-between items-center p-5'>
-        <div>
-
-        <h1 className='text-2xl font-bold'>Salisu Yushau</h1>
-        </div>
-        <nav className='flex gap-5 hover:gap-10 transition-all duration-300'>
-          <a href="#about" className='text-lg'>About</a>
-          <a href="#projects" className='text-lg'>Projects</a>
-          <a href="#contact" className='text-lg'>Contact</a>
-        </nav>
+   const [modal, setModal] = useState(false)
+   return (
+      <>
+      <div className="bg-slate-950 text-slate-50">
+         <header className="flex justify-between items-center p-6 fixed top-0 left-0 w-full z-10">
+            <div className="text-2xl font-bold text-slate-950 ">My Portfolio</div>
+            <div className="hidden md:flex gap-8 text-slate-50">
+               <a href="#skills">Skills</a>
+               <a href="#my-offer">My Offer</a>
+               <a href="#contact">Contact</a>
+            </div>
+            <button className="md:hidden" onClick={() => setModal(!modal)}>
+               <img src={modal ? CLOSE : MENU} alt="" />
+            </button>
+         </header>
+         {modal && (
+            <div className="fixed top-0 left-0 w-full h-screen bg-slate-900/80 flex flex-col items-center justify-center gap-8 text-slate-50 text-xl md:hidden">
+               <a href="#skills" onClick={() => setModal(!modal)}>Skills</a>
+               <a href="#my-offer" onClick={() => setModal(!modal)}>My Offer</a>
+               <a href="#contact" onClick={() => setModal(!modal)}>Contact</a>
+            </div>
+         )}
       </div>
-      </div>
-  )
+      </>
+    )
 }
