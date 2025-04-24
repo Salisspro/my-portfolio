@@ -9,7 +9,7 @@ export default function Hero() {
                Hello, I am a <span className='text-blue-500'>React Developer</span>
             </p>
 
-            <div className='w-[15em] rounded overflow-hidden border-2  border-blue-500 mb-10 '>
+            <div className='w-[15em] rounded overflow-hidden border-[1px]  border-blue-500 mb-10 mt-20 '>
                <img className='z-10  opacity-70' src={IMG} alt="" />
             </div>
 
