@@ -10,8 +10,8 @@ export default function Hero() {
             <div className='rounded-lg overflow-hidden my-[5em]'>
                <img className='opacity-50' src={IMG} alt="" />
 
-               <p className='text-5xl w-[10em] bg-slate-950 p-5 font-bold text-slate-700 z-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-[1px] rounded-lg font-mono'>
-                  Hi, I am saliss<span className='text-blue-900'> React Developer</span>
+               <p className='text-5xl w-[10em] bg-slate-950 p-4 font-bold text-slate-700 z-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-[1px] rounded-lg font-mono border-x-0'>
+                  Hi, I am a<span className='text-blue-900'> React Developer</span>
                </p>
 
             </div>
