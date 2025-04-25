@@ -11,7 +11,7 @@ import IMG4 from '../assets/img/images (1).png'
 
 export default function Skills() {
   return (
-    <div className="p-20 m-10 transition-all duration-300 bg-slate-900 text-slate-50">
+    <div className=" m-1 transition-all duration-300 bg-slate-900 text-slate-50">
       <h1 className="text-6xl my-5 p-2 font-semibold">My skills</h1>
       <div className="font-semibold md:flex grid grid-cols-1 items-center justify-center md:space-x-5 space-y-5">
          <div className="md:grid rounded-full  md:w-[10em] flex items-center space-x-2">
