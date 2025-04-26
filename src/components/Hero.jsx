@@ -11,7 +11,7 @@ export default function Hero() {
                <img className='opacity-50' src={IMG} alt="" />
 
 
-               <p className='text-5xl w-[10em] -rotate-90 g-slate-950 p-4 font-bold text-slate-300 absolute left-[10.9em] top-[11.1em] transform -translate-x-1/2 -translate-y-1/2 border-[1px] rounded-lg font-mono border-x-0 '>
+               <p className='text-5xl w-[10em] -rotate-90 g-slate-950 p-4 font-bold text-slate-300 absolute left-[8.9em] top-[11.1em] transform -translate-x-1/2 -translate-y-1/2 border-[1px] rounded-lg font-mono border-x-0 '>
                   Hi, I am a<span className='text-blue-900'> React Developer</span>
                </p>
 
