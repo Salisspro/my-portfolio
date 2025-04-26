@@ -7,16 +7,19 @@ export default function Hero() {
    return (
       <div className='mt-[4em] '>
          <div className='flex items-center justify-center'>
-            <div className='rounded-lg overflow-hidden my-[5em]'>
+            <div className='rounded-lg overflow-hidden my-[4em] '>
                <img className='opacity-50' src={IMG} alt="" />
 
-               <p className='text-5xl w-[10em] bg-slate-950 p-4 font-bold text-slate-700 z-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-[1px] rounded-lg font-mono border-x-0'>
+
+               <p className='text-5xl w-[10em] -rotate-90 g-slate-950 p-4 font-bold text-slate-300 absolute left-[10.9em] top-[11.1em] transform -translate-x-1/2 -translate-y-1/2 border-[1px] rounded-lg font-mono border-x-0 '>
                   Hi, I am a<span className='text-blue-900'> React Developer</span>
                </p>
 
             </div>
 
          </div>
+
+         {/* className='' */}
 
          <p className='text-slate-300 text-lg font-semibold md:text-3xl px-5 mt-5'>
             I am a React developer with a passion for building web applications. I have experience in building responsive and user-friendly web applications using React, Tailwind CSS, and other modern web technologies.
