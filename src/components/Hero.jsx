@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import ICON from '../assets/icons/developer-png-9wxnnbpbatv5o2dn.png'
+// import ICON from '../assets/icons/developer-png-9wxnnbpbatv5o2dn.png'
+import IMG from '../assets/img/317752578_1361099784715126_2064839100156994520_n-removebg-preview (1).png'
 
 export default function Hero() {
    const [readMore, setReadMore] = useState(false)
@@ -8,7 +9,7 @@ export default function Hero() {
       <div className='mt-[4em] '>
          <div className='flex items-center justify-center'>
             <div className='rounded-lg overflow-hidden my-[4em] '>
-               <img className='opacity-50' src={ICON} alt="" />
+               <img className='opacity-50 ' src={IMG} alt="" />
 
 
                <p className='text-5xl w-[10em] p-4 font-bold text-slate-300 '>
