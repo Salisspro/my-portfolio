@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import IMG from '../img/317752578_1361099784715126_2064839100156994520_n-removebg-preview (1).png'
+import ICON from '../assets/icons/developer-png-9wxnnbpbatv5o2dn.png'
 
 export default function Hero() {
    const [readMore, setReadMore] = useState(false)
@@ -8,10 +8,10 @@ export default function Hero() {
       <div className='mt-[4em] '>
          <div className='flex items-center justify-center'>
             <div className='rounded-lg overflow-hidden my-[4em] '>
-               <img className='opacity-50' src={IMG} alt="" />
+               <img className='opacity-50' src={ICON} alt="" />
 
 
-               <p className='text-5xl w-[10em] -rotate-90 g-slate-950 p-4 font-bold text-slate-300 absolute left-[8.9em] top-[11.1em] transform -translate-x-1/2 -translate-y-1/2 border-[1px] rounded-lg font-mono border-x-0 '>
+               <p className='text-5xl w-[10em] p-4 font-bold text-slate-300 '>
                   Hi, I am a<span className='text-blue-900'> React Developer</span>
                </p>
 
