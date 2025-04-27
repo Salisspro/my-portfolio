@@ -10,40 +10,37 @@ export default function Header() {
    const [modal, setModal] = useState(false)
    const [showContact, setShowContact] = useState(false)
    return (
-      <>
-         <div className="bg-slate- text-slate-50">
-            <header className="flex justify-between items-center p-6 fixed bg-slate-200 top-0 left-0 w-full z-10">
-               <div className="text-3xl  font-bold text-slate-950 ">My Portfolio</div>
+      <div className="bg-slate-900 text-slate-300">
+         <header className="flex items-center justify-between px-5 py-4 bg-slate-300 text-slate-900 w-full z-10">
+            <div className="text-2xl font-bold">My Portfolio</div>
+            <nav className="hidden md:flex space-x-4">
+               <a href="#about" className="hover:text-blue-500">About</a>
+               <a href="#projects" className="hover:text-blue-500">Projects</a>
+               <a href="#contact" className="hover:text-blue-500">Contact</a>
+            </nav>
+            <button onClick={() => setModal(!modal)} className="md:hidden">
+               <img src={modal ? CLOSE : MENU} alt="" />
+            </button>
+         </header>
 
-               <div className="hidden md:flex gap-8 text-slate-50 ">
-                  <a href="#skills">Skills</a>
-                  <a href="#my-offer">My Offer</a>
-                  <a href="#contact">Contact</a>
-                  <a href="#dark-mode">Dark Mode</a>
+         {modal && (
+            <div className="fixed top-0 left-0 w-full h-full bg-slate-900 bg-opacity-80 flex flex-col items-center justify-center z-20">
+               <nav className="flex flex-col space-y-4 text-center text-xl font-semibold text-slate-300">
+                  <a href="../About" onClick={() => setModal(false)}>About</a>
+                  <a href="../../projects" onClick={() => setModal(false)}>Projects</a>
+                  <a href="../ontact" onClick={() => setModal(false)}>Contact</a>
+               </nav>
+            </div>
+         )}
 
-                  <div>
-                     {
-                        showContact ? <button onClick={() => setShowContact(!showContact)}>Contact</button> : <button onClick={() => setShowContact(!showContact)}>Contact</button>
-                     }
-                     <a href="/Contact" onClick={() => setShowContact(!showContact)}>Contact</a>
-                     {showContact && <Contact />}
-
-                  </div>
-                  <a href="#contact">Contact</a>
-               </div>
-               <button className="md:hidden" onClick={() => setModal(!modal)}>
-                  <img src={modal ? CLOSE : MENU} alt="" />
-               </button>
-            </header>
-            {modal && (
-               <div className="fixed top-0 left-0 w-full h-screen bg-slate-900/80 flex flex-col items-center justify-center gap-8 text-slate-50 text-4xl md:hidden bg-slate-700">
-                  <a href="../../Skills" onClick={() => setModal(!modal)}>Skills</a>
-                  <a href="../MyOffer" onClick={() => setModal(!modal)}>My-Offer</a>
-                  <a href="../Contact" onClick={() => setModal(!modal)}>Contact</a>
-                  <a href="../DarkMode" onClick={() => setModal(!modal)}>Dark Mode</a>
-               </div>
-            )}
+         {showContact && (
+            <Contact setShowContact={setShowContact} />
+         )}
+         <div className="fixed bottom-4 right-4 z-20">
+            <button onClick={() => setShowContact(!showContact)} className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-600 transition duration-300 ">
+               Contact Me
+            </button>
          </div>
-      </>
+      </div>
    )
 }
