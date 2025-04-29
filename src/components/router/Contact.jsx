@@ -7,20 +7,20 @@ import Icon3 from '../../assets/icons/download (4).png'
 export default function Contact() {
    return (
       <div className='min-h-screen bg-white'>
-         <div className='flex flex-col items-center justify-center p-20'>
-            <h1 className='text-5xl font-bold text-slate-700'>Contact Me</h1>
+         <div className='flex flex-col items-center justify-center p-5 bg-slate-900 text-slate-300'>
+            <h1 className='text-5xl font-bold text-slate-300'>Contact Me</h1>
             <img className='w-[10em] h-[10em] rounded-full mt-5' src={IMG} alt="Contact" />
-            <p className='text-slate-700 text-lg font-semibold md:text-3xl px-5 mt-5'>
+            <p className=' text-lg font-semibold md:text-3xl px-5 mt-5'>
                I am always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
             </p>
-            <p className=' text-lg font-semibold md:text-3xl px-5 mt-5 text-slate-700'>
+            <p className=' text-lg font-semibold md:text-3xl px-5 mt-5 '>
                Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
 
-            <p className=' text-slate-700 text-lg font-semibold md:text-3xl px-5 mt-5'>
+            <p className='text-lg font-semibold md:text-3xl px-5 mt-5'>
                If you have any questions or would like to get in touch, feel free to reach out to me via email or LinkedIn.
             </p>
          </div>
-         <div className='flex items-center justify-center bg-white'>
+         <div className='flex items-center bg-white my-5'>
 
             <div className='flex flex-col items-center justify-center'>
                <p className='text-slate-700 text-lg font-semibold md:text-3xl px-5 mt-5'>
