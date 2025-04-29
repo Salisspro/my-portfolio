@@ -6,7 +6,8 @@ import Skills from './components/Skills'
 import Contact from "./components/router/Contact";
 import PageNot from "./components/router/PageNot";
 import Main from "./components/Main";
-import DarkMode from "./components/DarkMode";
+import Project from "./components/router/Project";
+import About from "./components/router/About";
 
 
 export default function App() {
@@ -19,7 +20,8 @@ export default function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/my-offer" element={<MyOffer />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/dark-mode" element={<DarkMode />} />
+        <Route path="/projects" element={<Project/>} />
+        <Route path="/about" element={<About/>} />
         <Route path="*" element={<PageNot />} />
       </Routes>
       </BrowserRouter>

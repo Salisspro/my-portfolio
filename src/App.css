@@ -1,6 +1,12 @@
 #root{
       font-family: "Poppins", sans-serif;
-      font-weight: 100;
+      font-weight: 300;
       font-style: normal;
     
 }
+
+.main{
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+    }

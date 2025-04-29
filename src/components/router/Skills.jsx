@@ -14,7 +14,9 @@ export default function Skills() {
                <div className="md:grid rounded-full  md:w-[10em] flex items-center space-x-2">
                   <img className="w-[5em] h-[5em] rounded-full" src={IMG1} alt="" />
                   <p className="text-sm p-2">
+
                      Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.
+
                   </p>
                </div>
                <div className="rounded-full md:w-[10em] flex items-center space-x-2 md:grid">
@@ -27,6 +29,7 @@ export default function Skills() {
                <div className="border-blue-600  rounded-full md:w-[10em] flex items-center space-x-2 md:grid ">
                   <img className="w-[5em] h-[5em] rounded-full" src={IMG3} alt="" />
                   <p className="text-sm p-2">
+
                      JavaScript, a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm.
                   </p>
                </div>

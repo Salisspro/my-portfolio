@@ -6,7 +6,7 @@ import Icon3 from '../../assets/icons/download (4).png'
 
 export default function Contact() {
    return (
-      <div className='min-h-screen bg-slate-500'>
+      <div className='min-h-screen bg-white'>
          <div className='flex flex-col items-center justify-center p-20'>
             <h1 className='text-5xl font-bold text-slate-700'>Contact Me</h1>
             <img className='w-[10em] h-[10em] rounded-full mt-5' src={IMG} alt="Contact" />
@@ -29,7 +29,9 @@ export default function Contact() {
                      <a href="mailto:salisspro@gmail.com" target="_blank" rel="noopener noreferrer">
                         <span className='text-blue-500'>
                         Email</span>
+
                      </a>
+
                   </div>
                </p>
 
