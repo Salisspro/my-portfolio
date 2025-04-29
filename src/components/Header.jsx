@@ -9,7 +9,7 @@ export default function Header() {
    const [showContact, setShowContact] = useState(false)
    return (
       <div className="
-         bg-slate-300 text-slate-900 w-full z-10 flex flex-col items-center justify-center">
+         bg-slate-300 text-slate-900 w-full z-10 flex flex-col items-center justify-center right-2">
          <header className="flex items-center justify-between px-5 py-7  bg-white text-slate-900 w-full z-10">
             <div className="text-2xl font-bold">My Portfolio</div>
             <nav className="hidden md:flex space-x-4 text-slate-950">

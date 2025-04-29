@@ -6,8 +6,8 @@ import Icon3 from '../../assets/icons/download (4).png'
 
 export default function Contact() {
    return (
-      <div className='min-h-screen bg-white'>
-         <div className='flex flex-col items-center justify-center p-5 bg-slate-900 text-slate-300'>
+      <div className='mx-2 p-5 bg-white'>
+         <div className='flex flex-col items-center justify-center  bg-slate-900 text-slate-300 rounded-lg p-10'>
             <h1 className='text-5xl font-bold text-slate-300'>Contact Me</h1>
             <img className='w-[10em] h-[10em] rounded-full mt-5' src={IMG} alt="Contact" />
             <p className=' text-lg font-semibold md:text-3xl px-5 mt-5'>
@@ -20,8 +20,8 @@ export default function Contact() {
                If you have any questions or would like to get in touch, feel free to reach out to me via email or LinkedIn.
             </p>
          </div>
-         <div className='flex items-center bg-white my-5'>
 
+         <div className='flex items-center justify-center  bg-white h-'>
             <div className='flex flex-col items-center justify-center'>
                <p className='text-slate-700 text-lg font-semibold md:text-3xl px-5 mt-5'>
                   <div className='flex items-center space-x-2'>
@@ -34,9 +34,8 @@ export default function Contact() {
 
                   </div>
                </p>
-
-
             </div>
+
             <div className='flex flex-col items-center justify-center'>
                <p className='text-slate-700 text-lg font-semibold md:text-3xl px-5 mt-5'>
                   <div className='flex items-center '>
