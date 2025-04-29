@@ -20,14 +20,14 @@ export default function Contact() {
                If you have any questions or would like to get in touch, feel free to reach out to me via email or LinkedIn.
             </p>
          </div>
-         <div className='flex p-10 items-center justify-center bg-white'>
+         <div className='flex items-center justify-center bg-white'>
 
             <div className='flex flex-col items-center justify-center'>
                <p className='text-slate-700 text-lg font-semibold md:text-3xl px-5 mt-5'>
                   <div className='flex items-center space-x-2'>
                      <img className='w-[2em] h-[2em] rounded-full' src={Icon1} alt="" />
                      <a href="mailto:salisspro@gmail.com" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-500'>
+                        <span className='text-blue-500 text-sm'>
                         Email</span>
 
                      </a>
@@ -42,7 +42,7 @@ export default function Contact() {
                   <div className='flex items-center '>
                      <img className='w-[3em] h-[3em] rounded-full' src={Icon2} alt="" />
                      <a href="https://www.linkedin.com/in/salis-s-pro-1147462aa/" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-500'>LinkedIn</span>
+                        <span className='text-blue-500 text-sm'>LinkedIn</span>
                      </a>
                   </div>
                </p>
@@ -53,7 +53,7 @@ export default function Contact() {
 
                      <img className='w-[2em] h-[2em] rounded-full ' src={Icon3} alt="" />
                      <a href="https://github.com/Salisspro" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-500'>GitHub</span>
+                        <span className='text-blue-500 text-sm'>GitHub</span>
                      </a>
                   </div>
                </p>
