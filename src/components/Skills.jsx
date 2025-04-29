@@ -15,44 +15,34 @@ export default function Skills() {
             <div className="md:grid rounded-full  md:w-[10em] flex items-center space-x-2">
                
                <p className="">
+                  <span>html</span> <br />
                   Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.
                </p>
             </div>
             <div className="rounded-full md:w-[10em] flex items-center space-x-2 md:grid">
-               {/* <img className="w-[5em] h-[5em] rounded-full" src={IMG2} alt="" /> */}
+               
                <p className="">
+                  <span>css</span> <br />
                   Cascading Style Sheets, a style sheet language used for describing the presentation of a document written in HTML or XML.
                </p>
             </div>
 
             <div className="border-blue-600  rounded-full md:w-[10em] flex items-center space-x-2 md:grid ">
-               {/* <img className="w-[5em] h-[5em] rounded-full" src={IMG3} alt="" /> */}
+               
                <p className="">
+                  <span>JavaScript</span> <br />
                   JavaScript, a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm.
                </p>
             </div>
             <div className=" md:grid  rounded-full md:w-[10em] flex items-center space-x-2 ">
-               {/* <img className="w-[5em] h-[5em] rounded-full" src={IMG4} alt="" /> */}
+               
                <p className="">
+                  <span>React</span> <br />
                   React, a JavaScript library for building user interfaces based on UI components. It is maintained by Facebook and a community of individual developers and companies.
                </p>
             </div>
          </div>
 
-         {/* <div className="card bg-base-100 w-96 shadow-sm">
-            <figure>
-               <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt="Shoes" />
-            </figure>
-            <div className="card-body">
-               <h2 className="card-title">Card Title</h2>
-               <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-               <div className="card-actions justify-end">
-                  <button className="btn btn-primary">Buy Now</button>
-               </div>
-            </div>
-         </div> */}
       </div>
    )
 }
