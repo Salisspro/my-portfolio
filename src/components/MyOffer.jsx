@@ -3,12 +3,20 @@
 
 export default function MyOffer() {
   return (
-    <div className="p-10 transition-all duration-300 bg-slate-900 text-slate-50 ">
-      {/* <h1 className="text-6xl my-5 p-2 font-semibold">My Offer</h1> */}
-
+    <div className="p-10 transition-all duration-300 bg-slate-900 text-slate-50 
+    md:flex md:flex-col md:items-center md:justify-center">
+      <div className="flex flex-col-reverse ">
+        
       <p>You may join our developer group</p>
       <p>We are a group of developers who are passionate about building web applications. We have experience in building responsive and user-friendly web applications using React, Tailwind CSS, and other modern web technologies.</p>
+      <div >
+
       <p className=" text-4xl my-5 font-semibold">We offer a wide range of services including:</p>
+      </div>
+      </div>
+      <p className="text-2xl my-5 font-semibold">Our Services</p>
+      <div className="font-semibold md:flex grid grid-cols-1 items-center justify-center md:space-x-5 space-y-5 p-3">
+
       <ul className="list-disc list-inside">
         <li>Web development</li>
         <li>Mobile app development</li>
@@ -38,6 +46,7 @@ export default function MyOffer() {
         <li>Augmented reality (AR)</li>
         </ul>
 
+      </div>
     </div>
   )
 }
