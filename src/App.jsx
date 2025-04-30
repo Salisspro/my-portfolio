@@ -13,7 +13,7 @@ import About from "./components/router/About";
 export default function App() {
 
   return (
-    <div  className='min-h-screen text-slate-50 bg-black '>
+    <div  className='min-h-screen text-slate-50 bg-gradient-to-l to-slate-700 from-slate-900'>
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Main/>} />

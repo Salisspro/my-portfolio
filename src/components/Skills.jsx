@@ -1,16 +1,14 @@
 
-// import IMAGE from '../assets/icons/front-end-developer-tn.webp'
-import REMOVE from '../assets/icons/1530436094339-removebg-preview.png'
-
+import LOGO from '../assets/icons/front-end-developer-tn.webp'
 
 
 export default function Skills() {
    return (
       <div className=" my-10 transition-all duration-300 bg-white text-slate-900 main">
-         <h1 className="text-6xl my-5 p-5 font-semibold">My skills</h1>
+         
          <div className="flex items-center justify-center 
-         ">
-            <img className="w-full h-[20em] " src={REMOVE} alt="" />
+         bg-blue-600 ">
+            <img className="w-full h-[20em] z-10" src={LOGO} alt="" />
          </div>
          <div className=" md:flex grid grid-cols-1 items-center justify-center md:space-x-5 space-y-5 p-10">
             <div className="md:grid rounded-full  md:w-[10em] flex items-center space-x-2">
