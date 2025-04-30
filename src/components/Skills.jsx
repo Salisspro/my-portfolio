@@ -5,7 +5,7 @@ import LOGO from '../assets/icons/front-end-developer-tn.webp'
 export default function Skills() {
    return (
       <div className=" my-10 transition-all duration-300 bg-white text-slate-900 main">
-         
+
          <div className="flex items-center justify-center 
          bg-blue-600 ">
             <img className="w-full h-[20em] z-10" src={LOGO} alt="" />
@@ -18,13 +18,14 @@ export default function Skills() {
                   Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.
                </p>
             </div>
+            <hr className='bg-slate-500' />
             <div className="rounded-full md:w-[10em] flex items-center space-x-2 md:grid">
-
                <p className="">
                   <span>css</span> <br />
                   Cascading Style Sheets, a style sheet language used for describing the presentation of a document written in HTML or XML.
                </p>
             </div>
+            <hr className='bg-slate-500' />
 
             <div className="border-blue-600  rounded-full md:w-[10em] flex items-center space-x-2 md:grid ">
 
@@ -33,6 +34,8 @@ export default function Skills() {
                   JavaScript, a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm.
                </p>
             </div>
+            <hr className='bg-slate-500' />
+
             <div className=" md:grid  rounded-full md:w-[10em] flex items-center space-x-2 ">
 
                <p className="">

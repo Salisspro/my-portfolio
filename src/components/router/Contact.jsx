@@ -3,6 +3,7 @@ import IMG from '../../assets/img/spam-isolated-d-cartoon-vector-illustrations-c
 import Icon1 from '../../assets/icons/download (3).png'
 import Icon2 from '../../assets/icons/images (3).png'
 import Icon3 from '../../assets/icons/download (4).png'
+import Icon4 from '../../assets/icons/pngtree-calling-vector-icon-png-image_470733.jpg'
 
 export default function Contact() {
    return (
@@ -28,7 +29,7 @@ export default function Contact() {
                      <img className='w-[2em] h-[2em] rounded-full' src={Icon1} alt="" />
                      <a href="mailto:salisspro@gmail.com" target="_blank" rel="noopener noreferrer">
                         <span className='text-blue-500 text-sm'>
-                        Email</span>
+                           Email</span>
 
                      </a>
 
@@ -46,6 +47,7 @@ export default function Contact() {
                   </div>
                </p>
             </div>
+
             <div className='flex flex-col items-center justify-center'>
                <p className='text-slate-700 text-lg font-semibold md:text-3xl px-5 mt-5'>
                   <div className='flex items-center space-x-2 '>
@@ -57,6 +59,19 @@ export default function Contact() {
                   </div>
                </p>
             </div>
+
+            <div className='flex flex-col items-center justify-center'>
+               <p className='text-slate-700 text-lg font-semibold md:text-3xl px-5 mt-5'>
+                  <div className='flex items-center space-x-2 '>
+
+                     <img className='w-[2em] h-[2em] rounded-full ' src={Icon4} alt="" />
+                     <a href="tel:+2349125303046" target="_blank" rel="noopener noreferrer">
+                        <span className='text-blue-500 text-sm'>Call </span>
+                     </a>
+                  </div>
+               </p>
+            </div>
+
          </div>
       </div>
 
