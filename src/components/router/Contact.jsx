@@ -7,8 +7,8 @@ import Icon4 from '../../assets/icons/pngtree-calling-vector-icon-png-image_4707
 
 export default function Contact() {
    return (
-      <div className='mx-2 p-5 bg-white'>
-         <div className='flex flex-col items-center justify-center  bg-slate-900 text-slate-300 rounded-lg p-10'>
+      <div className=' bg-gradient-to-t from-gray-900 to-slate-600'>
+         <div className='flex flex-col items-center justify-center bg-gradient-to-t from-slate-800 to-slate-600 text-slate-300 rounded-lg p-10'>
             <h1 className='text-5xl font-bold text-slate-300'>Contact Me</h1>
             <img className='w-[10em] h-[10em] rounded-full mt-5' src={IMG} alt="Contact" />
             <p className=' text-lg font-semibold md:text-3xl px-5 mt-5'>
@@ -22,7 +22,7 @@ export default function Contact() {
             </p>
          </div>
 
-         <div className='flex items-center justify-center  bg-white h-'>
+         <div className='flex items-center justify-center  bg-white text-slate-300 rounded-lg p-10 mt-5'>
             <div className='flex flex-col items-center justify-center'>
                <p className='text-slate-700 text-lg font-semibold md:text-3xl px-5 mt-5'>
                   <div className='flex items-center space-x-2'>
