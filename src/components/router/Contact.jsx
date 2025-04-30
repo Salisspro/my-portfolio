@@ -3,7 +3,7 @@ import IMG from '../../assets/img/spam-isolated-d-cartoon-vector-illustrations-c
 import Icon1 from '../../assets/icons/download (3).png'
 import Icon2 from '../../assets/icons/images (3).png'
 import Icon3 from '../../assets/icons/download (4).png'
-import Icon4 from '../../assets/icons/pngtree-calling-vector-icon-png-image_470733.jpg'
+import Icon4 from '../../assets/icons/phone-call.png'
 
 export default function Contact() {
    return (
