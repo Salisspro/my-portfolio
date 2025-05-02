@@ -5,15 +5,21 @@ export default function Hero() {
    const [readMore, setReadMore] = useState(false)
 
    return (
-      <div className='mt-[0.5em]'>
+      <div className='mt-[3em]'>
+         <h1 className='text-slate-300 absolute top-[10em]'>Yo!! Welcome</h1>
          <div className='flex items-center justify-center'>
-            <div className='rounded-lg overflow-hidden my-[4em] md:my-[8em]  h-[20em] md:h-[30em] bg-gradient-to-b from-slate-900 to-slate-700 flex items-center justify-center w-full relative'>
-               <img className='opacity-50 w-full' src={IMG} alt="" />
 
+            <div className='rounded-lg overflow-hidden my-[4em] md:my-[8em]  h-[23em] md:h-[30em] bg-gradient-to-b from-slate-900 to-slate-700 flex items-center justify-center w-full relative mt-40 md:grid md:grid-cols-2'>
+               
 
-               <p className='text-5xl w-[10em] p-4 font-bold z-10 absolute bottom-0 ml-2'>
-                  Hi, I am a<span className='text-slate-200'> React Developer</span>
-               </p>
+               <img className='opacity-50 w-full md:w-[30em]' src={IMG} alt="" />
+
+               <div className='text-5xl w-[10em] p-4 font-bold absolute bottom-0 ml-2'>
+
+                  <p>
+                     Hi, I am a<span className='text-slate-200'> React Developer</span>
+                  </p>
+               </div>
             </div>
          </div>
 
