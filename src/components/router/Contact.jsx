@@ -22,7 +22,7 @@ export default function Contact() {
             </p>
          </div>
 
-         <div className='flex items-center justify-center  bg-white text-slate-300 rounded-lg  mt-5 absolute right-0 left-0 space-x-5 flex-wrap md:bottom-0 md:p-5'>
+         <div className='flex items-center justify-center  bg-white text-slate-300 rounded-lg  mt-5 absolute bottom-0 right-0 left-0 space-x-5 flex-wrap md:bottom-0 md:p-5'>
             <div className='flex flex-col items-center justify-center'>
                <p className='text-slate-700 text-lg font-semibold md:text-3xl px-5 mt-5'>
                   <div className='flex items-center space-x-2'>
