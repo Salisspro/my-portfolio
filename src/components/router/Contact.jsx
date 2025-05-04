@@ -7,7 +7,7 @@ import Icon4 from '../../assets/icons/phone-call.png'
 
 export default function Contact() {
    return (
-      <div className=' bg-gradient-to-t from-gray-900 to-slate-600 min-h-screen '>
+      <div className=' bg-gradient-to-t from-gray-900 to-slate-600 min-h-screen flex flex-col items-center justify-center relative'>
          <div className='flex flex-col items-center justify-center g-gradient-to-t from-slate-800 to-slate-600 text-slate-300 rounded-lg p-10'>
             <h1 className='text-5xl font-bold text-slate-300'>Contact Me</h1>
             <img className='w-[10em] h-[10em] rounded-full mt-5' src={IMG} alt="Contact" />
